@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-1">
-          <a href="/" className="text-2xl font-serif font-bold tracking-tighter text-primary">
+          <a href="/" className={`text-2xl font-serif font-bold tracking-tighter transition-colors duration-300 ${scrolled ? 'text-primary' : 'text-white'}`}>
             Brand<span className="text-yellow-600">Name</span>
           </a>
         </div>
@@ -42,7 +42,9 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="relative group text-sm font-semibold text-shadow-lg  uppercase tracking-widest text-yellow-600 hover:text-primary transition-colors"
+              className={`relative group text-sm font-semibold uppercase tracking-widest transition-colors duration-300 ${
+                scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-accent'
+              }`}
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
@@ -52,18 +54,18 @@ const Navbar = () => {
 
         {/* Icons */}
         <div className="flex-1 flex items-center justify-end space-x-6">
-          <button className="text-yellow-600 hover:text-primary transition-colors">
+          <button className={`transition-colors duration-300 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-accent'}`}>
             <Search size={20} />
           </button>
-          <button className="text-yellow-600 hover:text-primary transition-colors">
+          <button className={`transition-colors duration-300 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-accent'}`}>
             <User size={20} />
           </button>
-          <button className="text-yellow-600 hover:text-primary transition-colors relative">
+          <button className={`relative transition-colors duration-300 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-accent'}`}>
             <ShoppingBag size={20} />
             <span className="absolute -top-2 -right-2 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
           </button>
           <button 
-            className="md:hidden text-yellow-600"
+            className={`md:hidden transition-colors duration-300 ${scrolled ? 'text-gray-800' : 'text-white'}`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

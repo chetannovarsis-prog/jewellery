@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import { Heart, ShoppingCart } from 'lucide-react';
 
 const products = [
-  { id: 1, name: 'Temple Collection', image: 'https://images.unsplash.com/photo-1620067644919-646738573268?auto=format&fit=crop&q=80&w=600', category: 'Necklace' },
-  { id: 2, name: 'Kundan Heritage', image: 'https://images.unsplash.com/photo-1635767798638-3e25273a8256?auto=format&fit=crop&q=80&w=600', category: 'Sets' },
-  { id: 3, name: 'Vintage Gold', image: 'https://images.unsplash.com/photo-1599643478123-53d71c5b050b?auto=format&fit=crop&q=80&w=600', category: 'Bangle' },
+  { id: 1, name: 'Temple Collection', image: '/images/1.png', category: 'Necklace' },
+  { id: 2, name: 'Kundan Heritage', image: '/images/2.png', category: 'Sets' },
+  { id: 3, name: 'Vintage Gold', image: '/images/3.png', category: 'Bangle' },
   { id: 4, name: 'Royal Polki', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600', category: 'Earrings' },
   { id: 5, name: 'Bridal Glow', image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=600', category: 'Choker' },
   { id: 6, name: 'Emerald Muse', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=600', category: 'Ring' },
-  { id: 7, name: 'Silver Charm', image: 'https://images.unsplash.com/photo-1630030538573-097486e9036f?auto=format&fit=crop&q=80&w=600', category: 'Anklet' },
-  { id: 8, name: 'Diamond Aura', image: 'https://images.unsplash.com/photo-1611085583191-a3b13430168b?auto=format&fit=crop&q=80&w=600', category: 'Pendant' },
+  { id: 7, name: 'Silver Charm', image: '/images/4.png', category: 'Anklet' },
+  { id: 8, name: 'Diamond Aura', image: '/images/5.png', category: 'Pendant' },
 ];
 
 const ProductGrid = () => {

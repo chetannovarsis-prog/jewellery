@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const categories = [
-  { name: 'Pendant Sets', image: 'https://images.unsplash.com/photo-1599643478123-53d71c5b050b?auto=format&fit=crop&q=80&w=600' },
-  { name: 'Nath', image: 'https://images.unsplash.com/photo-1611085583191-a3b13430168b?auto=format&fit=crop&q=80&w=600' },
-  { name: 'Bangles', image: 'https://images.unsplash.com/photo-1620067644919-646738573268?auto=format&fit=crop&q=80&w=600' },
+  { name: 'Pendant Sets', image: '/images/pendantset.png' },
+  { name: 'Nath', image: '/images/nath.png' }, // Alternative Nath ID
+  { name: 'Bangles', image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=600' },
   { name: 'Rings', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=600' },
-  { name: 'Anklets', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600' },
+  { name: 'Anklets', image: '/images/Anklets.png' },
 ];
 
 const Categories = () => {
